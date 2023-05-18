@@ -28,6 +28,12 @@ html, body{
     align-items: center;
 }
 
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: #3B3B3B;
+}
+
 .nav__bar{
     display: flex;
 }
@@ -56,12 +62,6 @@ html, body{
 .menu__list-link{
     color: #FFF;
     text-decoration: none;
-}
-
-.footer{
-    width: 100%;
-    height: 350px;
-    background-color: #3B3B3B;
 }
 
 .card__container{
@@ -249,6 +249,7 @@ html, body{
 }
 
 @media (max-width: 1024px) {
+
     .header {
         width: 100%;
         height: 100px;
@@ -322,6 +323,16 @@ html, body{
     .main__card-text{
         font-size: 18px;
     }
+
+    .form{
+        width: 500px;
+        height: 600px;
+        border-radius: 15px;
+        margin-top: 100px;
+        margin-left: 280px;
+        background-color: #A1A1A1;
+    }
+    
 }
 
 @media (max-width: 414px) {
@@ -378,5 +389,17 @@ html, body{
     }
     .content__footer-text1{
         visibility: hidden;
+    }
+
+    .form{
+        width: 350px;
+        height: 600px;
+        margin-left: 0px;
+        border-radius: 15px;
+        background-color: #A1A1A1;
+    }
+
+    .button{
+        width: 200px;
     }
 }
