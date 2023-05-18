@@ -1,5 +1,7 @@
-const button = document.querySelector('button');
+const buttons = document.querySelectorAll('.main__card-button');
 
-button.addEventListener('click', () => {
-    alert("Товар добавлен в корзину!");
+buttons.forEach(async (button) => {
+    await button.addEventListener('click', () => {
+        alert("Товар добавлен в корзину!");
+    });
 });

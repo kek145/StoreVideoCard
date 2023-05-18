@@ -29,8 +29,54 @@
                 </nav>
             </div>
         </header>
-        <main class="main"></main>
-        <footer class="footer"></footer>
+
+        <main class="main">
+            <div class="container">
+                <form method="get" action="contacts.html" class="form">
+                    <h1 class="container__form-title">Оставить сообщение</h1>
+                    <input class="input" type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                    <input class="input" type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+                    <textarea class="container__textarea" id="message" name="message" rows="4" placeholder="Введите ваше сообщение" required></textarea>
+
+                    <button class="button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <img class="container__img-logo" src="/IMG/storelogo.png" alt="storelogo">
+                <div class="content__footer">
+                    <h2 class="content__footer-title">Видеокарты</h2>
+                    <p class="content__footer-text">Мы в соц сетях</p>
+                    <h2 class="content_footer-title1" >Каталог</h2>
+                    <p class="content__footer-text1">Видеокарты</p>
+                    <h2 class="content__footer-title2">Клиентам</h2>
+                    <pre class="content__footer-client">
+                        Вход в кабинет
+                        Акции
+                        Блог
+                        Оплата
+                        Trade-in
+                        Гарантия
+                        <a href="contacts.html" style="text-decoration: none; color: #fff;">Контакты</a>
+                        Доставка
+                        Розстрочка
+                        Iнформация
+                    </pre>
+                    <h2 class="container__footer-title3">Отдел продаж</h2>
+                    <pre class="content__footer-client1">
+                        050-812-95-98
+                        063-846-14-02
+                        068-418-92-07
+                    </pre>
+                    <div class="content__footer-img">
+                        <img src="/IMG/instagram.png" alt="inst">
+                        <img src="/IMG/tiktok.png" alt="tt">
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

@@ -24,7 +24,14 @@ html, body{
 
 .container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: #3B3B3B;
 }
 
 .nav__bar{
@@ -57,58 +64,342 @@ html, body{
     text-decoration: none;
 }
 
-.footer{
-    width: 100%;
-    height: 150px;
-    background-color: #3B3B3B;
+.card__container{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card{
     width: 350px;
     height: 550px;
-    margin: 60px;
+    margin: 50px;
     align-items: center;
+    border-radius: 15px;
     border: 1px solid #FFF;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.card1:hover, .card2:hover, .card3:hover, .card4:hover{
+.card:hover{
     margin-top: 50px;
     border: 2px solid red;
 }
 
+.main__card-img{
+    margin-left: 50px;
+}
+
 .main__card-title{
-    margin-top: 80px;
+    margin-top: 110px;
     margin-left: 100px;
 }
 
 .main__card-text{
     font-size: 14px;
+    margin-top: -15px;
     margin-left: 50px;
 }
-
-.main__card-title-price1, .main__card-title-price2{
-    margin: 5px;
-}
-
-.main__card-title-price1{
+.main__card-title-price{
     font-size: 24px;
+    margin: -10px;
+    margin-top: 30px;
     margin-left: 110px;
-    text-decoration: line-through;
     padding: -20px;
 }
 
-.main__card-title-price2{
-    font-size: 24px;
-    margin-left: 110px;
-}
-
 .main__card-button{
-    width: 150px;
+    width: 200px;
     height: 35px;
     margin-top: 20px;
-    margin-left: 90px;
+    margin-left: 70px;
     color: #FFF;
     border-radius: 10px;
     background-color: #FF0000;
+}
+
+.container__img-logo{
+    margin-top: 20px;
+    margin-left: -1000px;
+}
+
+.content__footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 700px;
+}
+
+.content__footer-title{
+    margin-top: 20px;
+    margin-left: -820px;
+}
+
+.content__footer-text{
+    margin-left: -820px;
+}
+
+.content__footer-img{
+    margin-top: 90px;
+    margin-left: -820px;
+}
+
+.content_footer-title1{
+    margin-top: -200px;
+    margin-left: -600px;
+}
+
+.content__footer-text1{
+    margin-left: -600px;
+}
+
+.content__footer-title2{
+    margin-top: -100px;
+    margin-left: -300px;
+}
+
+.content__footer-client{
+    margin-left: -470px;
+}
+
+.container__footer-title3{
+    margin-top: -240px;
+}
+
+.content__footer-client1{
+    margin-left: -170px;
+}
+
+.container__footer-title4{
+    margin-left: 400px;
+    margin-top: -130px;
+}
+
+.container__footer-client2{
+    margin-left: 230px;
+}
+
+.main__container-about{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.main__container-title{
+    margin-top: -20px;
+    margin-left: 0px;
+}
+
+.main__container-text{
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.form{
+    width: 500px;
+    height: 600px;
+    border-radius: 15px;
+    margin-left: 700px;
+    background-color: #A1A1A1;
+}
+
+.container__textarea{
+    resize: none;
+    width: 80%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: monospace;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.button{
+    width: 350px;
+    height: 50px;
+    display: block;
+    background-color: #1BC4F7;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+
+.input{
+    width: 80%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: monospace;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.container__form-title{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+@media (max-width: 1024px) {
+
+    .header {
+        width: 100%;
+        height: 100px;
+        padding: 5px 0;
+    }
+    
+    .nav__bar-img {
+        width: 64px;
+        height: 64px;
+        margin-top: 15px;
+        margin-left: -50px;
+    }
+    
+    .menu__list-item {
+      font-size: 34px;
+      padding-right: 150px;
+      margin-left: 10px;
+      margin-right: 5px;
+      margin-top: 15px;
+    }
+
+    .card{
+        display: block;
+        margin-left: 65px;
+    }
+    
+    .card:hover{
+        margin-top: 10px;
+        border: 2px solid red;
+    }
+
+    .container__img-logo{
+        margin-top: 20px;
+        margin-left: -800px;
+    }
+    .content__footer-title{
+        margin-left: -720px;
+    }
+
+    .content__footer-text{
+        margin-left: -720px;
+        font-size: 18px;
+    }
+    
+    .content__footer-img{
+        margin-top: 80px;
+        margin-left: -720px;
+    }
+    .content_footer-title1{
+        margin-top: -200px;
+        margin-left: -500px;
+    }
+    
+    .content__footer-text1{
+        margin-left: -500px;
+    }
+    
+    .content__footer-title2{
+        margin-top: -100px;
+        margin-left: -300px;
+    }
+    
+    .content__footer-client{
+        margin-left: -470px;
+    }
+
+    .main__card-title{
+        margin-top: 80px;
+        font-size: 18px;
+    }
+    .main__card-text{
+        font-size: 18px;
+    }
+
+    .form{
+        width: 500px;
+        height: 600px;
+        border-radius: 15px;
+        margin-top: 100px;
+        margin-left: 280px;
+        background-color: #A1A1A1;
+    }
+    
+}
+
+@media (max-width: 414px) {
+    .header {
+        width: 100%;
+        height: 40px;
+        padding: 5px 0;
+    }
+      
+    .nav__bar-img {
+        width: 34px;
+        height: 34px;
+        margin-top: 3px;
+        margin-left: -60px;
+    }
+      
+    .menu__list-item {
+        font-size: 14px;
+        padding-right: 15px;
+        margin-left: 10px;
+        margin-right: 3px;
+        margin-top: -5px;
+    }
+
+    .card{
+        display: block;
+        margin-left: 0;
+    }
+
+    .card:hover{
+        margin-top: 10px;
+        border: 2px solid red;
+    }
+
+    .container__img-logo{
+        width: 64px;
+        height: 64px;
+        margin-top: 20px;
+        margin-left: -300px;
+    }
+
+    .content__footer-img{
+        margin-top: 40px;
+        margin-left: -480px;
+    }
+
+    .content__footer-text{
+        margin-left: -480px;
+        font-size: 18px;
+    }
+
+    .content_footer-title1{
+        visibility: hidden;
+    }
+    .content__footer-text1{
+        visibility: hidden;
+    }
+
+    .form{
+        width: 350px;
+        height: 600px;
+        margin-left: 0px;
+        border-radius: 15px;
+        background-color: #A1A1A1;
+    }
+
+    .button{
+        width: 200px;
+    }
 }
