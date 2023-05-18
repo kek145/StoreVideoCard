@@ -29,7 +29,20 @@
                 </nav>
             </div>
         </header>
-        <main class="main"></main>
+
+        <main class="main">
+            <div class="container">
+                <form method="get" action="contacts.html" class="form">
+                    <h1 class="container__form-title">Оставить сообщение</h1>
+                    <input class="input" type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                    <input class="input" type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+                    <textarea class="container__textarea" id="message" name="message" rows="4" placeholder="Введите ваше сообщение" required></textarea>
+
+                    <button class="button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </main>
+
         <footer class="footer">
             <div class="container">
                 <img class="container__img-logo" src="/IMG/storelogo.png" alt="storelogo">
